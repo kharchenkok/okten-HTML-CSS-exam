@@ -1,0 +1,126 @@
+@media (min-width: 768px) {
+
+    body {
+        font-size: 20px;
+    }
+
+    .container {
+        --container-max-width: 768px;
+        --container-padding: 32px;
+    }
+
+    .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .section:first-of-type {
+        padding-top: 80px;
+    }
+
+    .section:last-of-type {
+        padding-bottom: 80px;
+    }
+
+    .section-grey {
+        padding-top: 68px;
+        padding-bottom: 68px;
+    }
+
+    .title-link {
+        gap: 6px;
+        font-size: 16px;
+    }
+
+    .title-link .icon {
+        max-height: 100%;
+    }
+
+    .btn {
+        padding: 20px 23px;
+        font-size: 20px;
+    }
+
+    .header .container {
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 36px;
+    }
+
+    .logo span {
+        font-size: 18px;
+    }
+
+    .nav {
+        font-size: 20px;
+    }
+
+    .nav-list {
+        gap: 50px;
+    }
+
+    .nav-link {
+        gap: 10px;
+    }
+
+    .header .btn {
+        padding: 10px 17px;
+        gap: 10px;
+        font-size: 18px;
+    }
+
+    /*==============hero====================*/
+    .hero {
+        padding-top: calc(30px + 133px);
+        padding-bottom: 30px;
+
+    }
+
+    .hero .container {
+        gap: 30px;
+    }
+
+    .hero-content {
+        gap: 30px;
+    }
+
+    .hero-title {
+        font-size: 54px;
+    }
+
+    /*===============category=====================*/
+    .category .container {
+        gap: 50px;
+        --card-item: 3;
+        --card-gap: 37px;
+    }
+
+    .category-list .item-link {
+        padding: 65px 30px 95px;
+        gap: 30px;
+    }
+
+    .category-list .item-title {
+        font-size: 20px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

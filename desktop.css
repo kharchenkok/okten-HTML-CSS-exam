@@ -1,0 +1,65 @@
+@media (min-width: 1440px) {
+    .container {
+        --container-max-width: 1440px;
+        --container-padding: 95px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .title-link {
+        font-size: 20px;
+    }
+
+    .header .container {
+        grid-template-columns: auto 1fr auto;
+        gap: 50px;
+    }
+
+    .nav-list {
+        justify-content: flex-end;
+    }
+
+    /*======================hero====================*/
+    .hero {
+        padding-top: calc(185px + 86px);
+        padding-bottom: 263px;
+
+    }
+
+    .hero .container {
+        flex-direction: row;
+        gap: 115px;
+    }
+
+
+    .hero-title {
+        font-size: 64px;
+    }
+
+    .hero-img {
+        max-width: 470px;
+    }
+
+    /*===============category=====================*/
+    .category .container {
+        --card-item: 5;
+    }
+
+    .category-list .item-title {
+        font-size: 24px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
