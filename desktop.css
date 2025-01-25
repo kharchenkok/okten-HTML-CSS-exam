@@ -23,7 +23,7 @@
 
     /*======================hero====================*/
     .hero {
-        padding-top: calc(185px + 86px);
+        padding-top: calc(164px + 85px);
         padding-bottom: 263px;
 
     }
@@ -39,7 +39,7 @@
     }
 
     .hero-img {
-        max-width: 470px;
+        max-width: 434px;
     }
 
     /*===============category=====================*/
@@ -51,6 +51,23 @@
         font-size: 24px;
     }
 
+    /*=================gallery================*/
+    .gallery-list {
+        --card-item: 4;
+        --card-gap: 16px;
+    }
+
+    .gallery-list .item-link {
+        min-height: 425px;
+    }
+
+    .gallery-list .item-title {
+        font-size: 20px;
+    }
+
+    .gallery-list .author-title {
+        font-size: 16px;
+    }
 }
 
 

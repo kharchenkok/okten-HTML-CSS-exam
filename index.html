@@ -1,166 +1,1419 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dasteen Blog </title>
-    <link rel="apple-touch-icon" sizes="180x180"
-            href="./favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-            href="./favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-            href="./favicon_io/favicon-16x16.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <link href="tablet.css" rel="stylesheet">
-    <link href="desktop.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dasteen Blog </title>
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="./favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="./favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="./favicon_io/favicon-16x16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link href="tablet.css" rel="stylesheet">
+  <link href="desktop.css" rel="stylesheet">
 
 
 </head>
 <body>
 <header class="header">
-    <div class="container">
-        <a class="logo" href="#">
-            Dasteen<span>.Blog</span>
-        
-        </a>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Category</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <svg class="icon" width="17" height="18">
-                            <use xlink:href="image/sprite.svg#search"></use>
-                        </svg>
-                        Search
-                    </a>
-                </li>
-            </ul>
-        
-        </nav>
-        <button class="btn">
-            <img src="image/coffee.svg" alt="" width="24" height="24">
-            buy Me a Coffee
-        </button>
-    </div>
+  <div class="container">
+    <a class="logo" href="#">
+      Dasteen<span>.Blog</span>
+    
+    </a>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="link nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="link nav-link" href="#">Category</a>
+        </li>
+        <li class="nav-item">
+          <a class="link nav-link" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="link nav-link" href="#">
+            <svg class="icon" width="17" height="18">
+              <use xlink:href="image/sprite.svg#search"></use>
+            </svg>
+            Search
+          </a>
+        </li>
+      </ul>
+    
+    </nav>
+    <button class="btn">
+      <img src="image/coffee.svg" alt="" width="24" height="24">
+      buy Me a Coffee
+    </button>
+  </div>
 
 </header>
 <main>
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="title hero-title">Hi, i’m Dasteen <span>Front end dev</span></h1>
-                <p class="hero-text">On this blog I share tips and tricks, frameworks, projects, tutorials, etc
-                    Make sure you subscribe to get the latest updates</p>
-                <form class="form">
-                    <label>
-                        <input type="email" name="email" placeholder="Enter your email here....">
-                    </label>
-                    <button class="btn" type="submit">Subscribe</button>
-                </form>
-            
-            </div>
-            <div class="hero-img">
-                <picture>
-                    <source
-                            srcset="
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="title hero-title">Hi, i’m Dasteen <span>Front end dev</span></h1>
+        <p class="hero-text">On this blog I share tips and tricks, frameworks, projects, tutorials, etc
+          Make sure you subscribe to get the latest updates</p>
+        <form class="form">
+          <label>
+            <input type="email" name="email" placeholder="Enter your email here....">
+          </label>
+          <button class="btn" type="submit">Subscribe</button>
+        </form>
+      
+      </div>
+      <div class="hero-img">
+        <picture>
+          <source
+            srcset="
                 ./image/hero/hero.webp    435w,
                 ./image/hero/hero@2x.webp 870w
               "
-                            type="image/webp"
-                            media="(min-width:175px)"
-                    />
-                    <source
-                            srcset="
+            type="image/webp"
+            media="(min-width:175px)"
+          />
+          <source
+            srcset="
                 ./image/hero/hero.png   435w,
                 ./image/hero/hero@2x.png 870w
               "
-                            type="image/png"
-                            media="(min-width:175px)"
-                    />
-                    
-                    <img
-                            
-                            srcset="
+            type="image/png"
+            media="(min-width:175px)"
+          />
+          
+          <img
+            
+            srcset="
                 ./image/hero/hero.png    435w,
                 ./image/hero/hero@2x.png 870w
               "
-                            src="./image/hero/hero.png"
-                            alt="Hero image"
-                    />
-                </picture>
-            
+            src="./image/hero/hero.png"
+            alt="Hero image"
+          />
+        </picture>
+      
+      </div>
+    </div>
+  
+  </section>
+  <section class="section-grey category">
+    <div class="container">
+      <div class="title-wrapper">
+        <h2 class="title section-title">Browse the category</h2>
+        <a class="link title-link" href="#">see all category
+          <svg class="icon" width="8" height="16">
+            <use xlink:href="image/sprite.svg#arrow-right"></use>
+          </svg>
+        </a>
+      </div>
+      
+      <ul class="grid-list category-list">
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-icon">
+              <img src="image/category/css.svg" alt="css icon" width="33" height="37">
             </div>
-        </div>
+            <h3 class="title item-title">CSS</h3>
+          </a>
+        </li>
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-icon">
+              <img src="image/category/js.svg" alt="js icon" width="60" height="60">
+            </div>
+            <h3 class="title item-title">javascript</h3>
+          </a>
+        </li>
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-icon">
+              <img src="image/category/tailwind.svg" alt="tailwind icon" width="40" height="24">
+            </div>
+            <h3 class="title item-title">Tailwind</h3>
+          </a>
+        </li>
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-icon">
+              <img src="image/category/vue.svg" alt="Vue JS icon" width="36" height="31">
+            </div>
+            <h3 class="title item-title">Vue JS</h3>
+          </a>
+        </li>
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-icon">
+              <img src="image/category/react.svg" alt="React JS icon" width="40" height="36">
+            </div>
+            <h3 class="title item-title">React JS</h3>
+          </a>
+        </li>
+      </ul>
     
-    </section>
-    <section class="section-grey category">
-        <div class="container">
-            <div class="title-wrapper">
-                <h2 class="title section-title">Browse the category</h2>
-                <a class="title-link" href="#">see all category
-                    <svg class="icon" width="8" height="16">
-                        <use xlink:href="image/sprite.svg#arrow-right"></use>
-                    </svg>
-                </a>
+    </div>
+  </section>
+  <section class="section gallery featured">
+    <div class="container">
+      <div class="title-wrapper">
+        <h2 class="title section-title">Featured Article</h2>
+        <a class="link title-link" href="#">See All Article
+          <svg class="icon" width="8" height="16">
+            <use xlink:href="image/sprite.svg#arrow-right"></use>
+          </svg>
+        </a>
+      </div>
+      
+      <ul class="grid-list gallery-list">
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-img">
+              <picture>
+                <source
+                  srcset="
+                ./image/featured/featured-1.webp    260w,
+                ./image/featured/featured-1@2x.webp 520w
+              "
+                  type="image/webp"
+                  media="(min-width:175px)"
+                />
+                <source
+                  srcset="
+                ./image/featured/featured-1.png   260w,
+                ./image/featured/featured-1@2x.png 520w
+              "
+                  type="image/png"
+                  media="(min-width:175px)"
+                />
+                
+                <img
+                  
+                  srcset="
+                ./image/featured/featured-1.png   260w,
+                ./image/featured/featured-1@2x.png 520w
+              "
+                  src="./image/featured/featured-1.png"
+                  alt="photo of the book JavaScript for web designers"
+                />
+              </picture>
             </div>
+            <h3 class="title item-title">Fundamental of javascript</h3>
+            <div class="author-wrapper">
+              <div class="author-img">
+                <picture>
+                  <source
+                    srcset="
+                ./image/author/author-1.webp   57w,
+                ./image/author/author-1@2x.webp 114w
+              "
+                    type="image/webp"
+                    media="(min-width:175px)"
+                  />
+                  <source
+                    srcset="
+                ./image/author/author-1.png   57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    type="image/png"
+                    media="(min-width:175px)"
+                  />
+                  
+                  <img
+                    
+                    srcset="
+                ./image/author/author-1.png    57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    src="./image/author/author-1.png"
+                    alt="photo of the author of the article"
+                  />
+                </picture>
+              </div>
+              <div class="author-content">
+                <p class="title author-title">Dasteen</p>
+                <p class="author-date">
+                  <span>Jan 10, 2022</span>
+                  <span>3 min read</span>
+                </p>
+              </div>
             
-            <ul class="grid-list category-list">
-                <li class="item">
-                    <a class="item-link" href="#">
-                        <div class="item-icon">
-                            <img src="image/category/css.svg" alt="css icon" width="33" height="37">
-                        </div>
-                        <h3 class="title item-title">CSS</h3>
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="item-link" href="#">
-                        <div class="item-icon">
-                            <img src="image/category/js.svg" alt="js icon" width="60" height="60">
-                        </div>
-                        <h3 class="title item-title">javascript</h3>
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="item-link" href="#">
-                        <div class="item-icon">
-                            <img src="image/category/tailwind.svg" alt="tailwind icon" width="40" height="24">
-                        </div>
-                        <h3 class="title item-title">Tailwind</h3>
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="item-link" href="#">
-                        <div class="item-icon">
-                            <img src="image/category/vue.svg" alt="Vue JS icon" width="36" height="31">
-                        </div>
-                        <h3 class="title item-title">Vue JS</h3>
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="item-link" href="#">
-                        <div class="item-icon">
-                            <img src="image/category/react.svg" alt="React JS icon" width="40" height="36">
-                        </div>
-                        <h3 class="title item-title">React JS</h3>
-                    </a>
-                </li>
-            </ul>
-        
-        </div>
-    </section>
+            </div>
+          </a>
+        </li>
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-img">
+              <picture>
+                <source
+                  srcset="
+                ./image/featured/featured-2.webp    260w,
+                ./image/featured/featured-2@2x.webp 520w
+              "
+                  type="image/webp"
+                  media="(min-width:175px)"
+                />
+                <source
+                  srcset="
+                ./image/featured/featured-2.png   260w,
+                ./image/featured/featured-2@2x.png 520w
+              "
+                  type="image/png"
+                  media="(min-width:175px)"
+                />
+                
+                <img
+                  
+                  srcset="
+                ./image/featured/featured-2.png   260w,
+                ./image/featured/featured-2@2x.png 520w
+              "
+                  src="./image/featured/featured-2.png"
+                  alt="photo of monitor with program code"
+                />
+              </picture>
+            </div>
+            <h3 class="title item-title">Grid CSS make your life easier</h3>
+            <div class="author-wrapper">
+              <div class="author-img">
+                <picture>
+                  <source
+                    srcset="
+                ./image/author/author-1.webp   57w,
+                ./image/author/author-1@2x.webp 114w
+              "
+                    type="image/webp"
+                    media="(min-width:175px)"
+                  />
+                  <source
+                    srcset="
+                ./image/author/author-1.png   57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    type="image/png"
+                    media="(min-width:175px)"
+                  />
+                  
+                  <img
+                    
+                    srcset="
+                ./image/author/author-1.png    57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    src="./image/author/author-1.png"
+                    alt="photo of the author of the article"
+                  />
+                </picture>
+              </div>
+              <div class="author-content">
+                <p class="title author-title">Dasteen</p>
+                <p class="author-date">
+                  <span>Jan 10, 2022</span>
+                  <span>3 min read</span>
+                </p>
+              </div>
+            
+            </div>
+          </a>
+        </li>
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-img">
+              <picture>
+                <source
+                  srcset="
+                ./image/featured/featured-3.webp    260w,
+                ./image/featured/featured-3@2x.webp 520w
+              "
+                  type="image/webp"
+                  media="(min-width:175px)"
+                />
+                <source
+                  srcset="
+                ./image/featured/featured-3.png   260w,
+                ./image/featured/featured-3@2x.png 520w
+              "
+                  type="image/png"
+                  media="(min-width:175px)"
+                />
+                
+                <img
+                  
+                  srcset="
+                ./image/featured/featured-3.png   260w,
+                ./image/featured/featured-3@2x.png 520w
+              "
+                  src="./image/featured/featured-3.png"
+                  alt="photo of toggle button"
+                />
+              </picture>
+            </div>
+            <h3 class="title item-title">Make animated light mode and dark mode toggle with CSS</h3>
+            <div class="author-wrapper">
+              <div class="author-img">
+                <picture>
+                  <source
+                    srcset="
+                ./image/author/author-1.webp   57w,
+                ./image/author/author-1@2x.webp 114w
+              "
+                    type="image/webp"
+                    media="(min-width:175px)"
+                  />
+                  <source
+                    srcset="
+                ./image/author/author-1.png   57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    type="image/png"
+                    media="(min-width:175px)"
+                  />
+                  
+                  <img
+                    
+                    srcset="
+                ./image/author/author-1.png    57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    src="./image/author/author-1.png"
+                    alt="photo of the author of the article"
+                  />
+                </picture>
+              </div>
+              <div class="author-content">
+                <p class="title author-title">Dasteen</p>
+                <p class="author-date">
+                  <span>Jan 10, 2022</span>
+                  <span>3 min read</span>
+                </p>
+              </div>
+            
+            </div>
+          </a>
+        </li>
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-img">
+              <picture>
+                <source
+                  srcset="
+                ./image/featured/featured-4.webp    260w,
+                ./image/featured/featured-4@2x.webp 520w
+              "
+                  type="image/webp"
+                  media="(min-width:175px)"
+                />
+                <source
+                  srcset="
+                ./image/featured/featured-4.png   260w,
+                ./image/featured/featured-4@2x.png 520w
+              "
+                  type="image/png"
+                  media="(min-width:175px)"
+                />
+                
+                <img
+                  
+                  srcset="
+                ./image/featured/featured-4.png   260w,
+                ./image/featured/featured-4@2x.png 520w
+              "
+                  src="./image/featured/featured-4.png"
+                  alt="photo of tic-tac-toe game"
+                />
+              </picture>
+            </div>
+            <h3 class="title item-title">Make tic tac toe games with react JS</h3>
+            <div class="author-wrapper">
+              <div class="author-img">
+                <picture>
+                  <source
+                    srcset="
+                ./image/author/author-1.webp   57w,
+                ./image/author/author-1@2x.webp 114w
+              "
+                    type="image/webp"
+                    media="(min-width:175px)"
+                  />
+                  <source
+                    srcset="
+                ./image/author/author-1.png   57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    type="image/png"
+                    media="(min-width:175px)"
+                  />
+                  
+                  <img
+                    
+                    srcset="
+                ./image/author/author-1.png    57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    src="./image/author/author-1.png"
+                    alt="photo of the author of the article"
+                  />
+                </picture>
+              </div>
+              <div class="author-content">
+                <p class="title author-title">Dasteen</p>
+                <p class="author-date">
+                  <span>Jan 10, 2022</span>
+                  <span>3 min read</span>
+                </p>
+              </div>
+            
+            </div>
+          </a>
+        </li>
+      
+      
+      </ul>
+    
+    </div>
+  </section>
+  <section class="section gallery css">
+    <div class="container">
+      <div class="title-wrapper">
+        <h2 class="title section-title">CSS</h2>
+        <a class="link title-link" href="#">See All Article
+          <svg class="icon" width="8" height="16">
+            <use xlink:href="image/sprite.svg#arrow-right"></use>
+          </svg>
+        </a>
+      </div>
+      
+      <ul class="grid-list gallery-list">
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-img">
+              <picture>
+                <source
+                  srcset="
+                ./image/css/css-1.webp    260w,
+                ./image/css/css-1@2x.webp 520w
+              "
+                  type="image/webp"
+                  media="(min-width:175px)"
+                />
+                <source
+                  srcset="
+                ./image/css/css-1.png   260w,
+                ./image/css/css-1@2x.png 520w
+              "
+                  type="image/png"
+                  media="(min-width:175px)"
+                />
+                
+                <img
+                  
+                  srcset="
+                ./image/css/css-1.png   260w,
+                ./image/css/css-1@2x.png 520w
+              "
+                  src="./image/css/css-1.png"
+                  alt="photo of notes"
+                />
+              </picture>
+            </div>
+            <h3 class="title item-title">Flexbox cSS : Everything you need to know</h3>
+            <div class="author-wrapper">
+              <div class="author-img">
+                <picture>
+                  <source
+                    srcset="
+                ./image/author/author-1.webp   57w,
+                ./image/author/author-1@2x.webp 114w
+              "
+                    type="image/webp"
+                    media="(min-width:175px)"
+                  />
+                  <source
+                    srcset="
+                ./image/author/author-1.png   57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    type="image/png"
+                    media="(min-width:175px)"
+                  />
+                  
+                  <img
+                    
+                    srcset="
+                ./image/author/author-1.png    57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    src="./image/author/author-1.png"
+                    alt="photo of the author of the article"
+                  />
+                </picture>
+              </div>
+              <div class="author-content">
+                <p class="title author-title">Dasteen</p>
+                <p class="author-date">
+                  <span>Jan 10, 2022</span>
+                  <span>3 min read</span>
+                </p>
+              </div>
+            
+            </div>
+          </a>
+        </li>
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-img">
+              <picture>
+                <source
+                  srcset="
+                ./image/css/css-2.webp    260w,
+                ./image/css/css-2@2x.webp 520w
+              "
+                  type="image/webp"
+                  media="(min-width:175px)"
+                />
+                <source
+                  srcset="
+                ./image/css/css-2.png   260w,
+                ./image/css/css-2@2x.png 520w
+              "
+                  type="image/png"
+                  media="(min-width:175px)"
+                />
+                
+                <img
+                  
+                  srcset="
+                ./image/css/css-2.png   260w,
+                ./image/css/css-2@2x.png 520w
+              "
+                  src="./image/css/css-2.png"
+                  alt="photo of monitor with program code"
+                />
+              </picture>
+            </div>
+            <h3 class="title item-title">Grid CSS make your life easier</h3>
+            <div class="author-wrapper">
+              <div class="author-img">
+                <picture>
+                  <source
+                    srcset="
+                ./image/author/author-1.webp   57w,
+                ./image/author/author-1@2x.webp 114w
+              "
+                    type="image/webp"
+                    media="(min-width:175px)"
+                  />
+                  <source
+                    srcset="
+                ./image/author/author-1.png   57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    type="image/png"
+                    media="(min-width:175px)"
+                  />
+                  
+                  <img
+                    
+                    srcset="
+                ./image/author/author-1.png    57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    src="./image/author/author-1.png"
+                    alt="photo of the author of the article"
+                  />
+                </picture>
+              </div>
+              <div class="author-content">
+                <p class="title author-title">Dasteen</p>
+                <p class="author-date">
+                  <span>Jan 10, 2022</span>
+                  <span>3 min read</span>
+                </p>
+              </div>
+            
+            </div>
+          </a>
+        </li>
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-img">
+              <picture>
+                <source
+                  srcset="
+                ./image/css/css-3.webp    260w,
+                ./image/css/css-3@2x.webp 520w
+              "
+                  type="image/webp"
+                  media="(min-width:175px)"
+                />
+                <source
+                  srcset="
+                ./image/css/css-3.png   260w,
+                ./image/css/css-3@2x.png 520w
+              "
+                  type="image/png"
+                  media="(min-width:175px)"
+                />
+                
+                <img
+                  
+                  srcset="
+                ./image/css/css-3.png   260w,
+                ./image/css/css-3@2x.png 520w
+              "
+                  src="./image/css/css-3.png"
+                  alt="photo of monitor with program code"
+                />
+              </picture>
+            </div>
+            <h3 class="title item-title">3 easy way to make div center</h3>
+            <div class="author-wrapper">
+              <div class="author-img">
+                <picture>
+                  <source
+                    srcset="
+                ./image/author/author-1.webp   57w,
+                ./image/author/author-1@2x.webp 114w
+              "
+                    type="image/webp"
+                    media="(min-width:175px)"
+                  />
+                  <source
+                    srcset="
+                ./image/author/author-1.png   57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    type="image/png"
+                    media="(min-width:175px)"
+                  />
+                  
+                  <img
+                    
+                    srcset="
+                ./image/author/author-1.png    57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    src="./image/author/author-1.png"
+                    alt="photo of the author of the article"
+                  />
+                </picture>
+              </div>
+              <div class="author-content">
+                <p class="title author-title">Dasteen</p>
+                <p class="author-date">
+                  <span>Jan 10, 2022</span>
+                  <span>3 min read</span>
+                </p>
+              </div>
+            
+            </div>
+          </a>
+        </li>
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-img">
+              <picture>
+                <source
+                  srcset="
+                ./image/css/css-4.webp    260w,
+                ./image/css/css-4@2x.webp 520w
+              "
+                  type="image/webp"
+                  media="(min-width:175px)"
+                />
+                <source
+                  srcset="
+                ./image/css/css-4.png   260w,
+                ./image/css/css-4@2x.png 520w
+              "
+                  type="image/png"
+                  media="(min-width:175px)"
+                />
+                
+                <img
+                  
+                  srcset="
+                ./image/css/css-4.png   260w,
+                ./image/css/css-4@2x.png 520w
+              "
+                  src="./image/css/css-4.png"
+                  alt="photo of toggle button"
+                />
+              </picture>
+            </div>
+            <h3 class="title item-title">Make animated light mode and dark mode toggle with CSS</h3>
+            <div class="author-wrapper">
+              <div class="author-img">
+                <picture>
+                  <source
+                    srcset="
+                ./image/author/author-1.webp   57w,
+                ./image/author/author-1@2x.webp 114w
+              "
+                    type="image/webp"
+                    media="(min-width:175px)"
+                  />
+                  <source
+                    srcset="
+                ./image/author/author-1.png   57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    type="image/png"
+                    media="(min-width:175px)"
+                  />
+                  
+                  <img
+                    
+                    srcset="
+                ./image/author/author-1.png    57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    src="./image/author/author-1.png"
+                    alt="photo of the author of the article"
+                  />
+                </picture>
+              </div>
+              <div class="author-content">
+                <p class="title author-title">Dasteen</p>
+                <p class="author-date">
+                  <span>Jan 10, 2022</span>
+                  <span>3 min read</span>
+                </p>
+              </div>
+            
+            </div>
+          </a>
+        </li>
+      </ul>
+    
+    </div>
+  </section>
+  <section class="section gallery js">
+    <div class="container">
+      <div class="title-wrapper">
+        <h2 class="title section-title">javascript</h2>
+        <a class="link title-link" href="#">See All Article
+          <svg class="icon" width="8" height="16">
+            <use xlink:href="image/sprite.svg#arrow-right"></use>
+          </svg>
+        </a>
+      </div>
+      <ul class="grid-list gallery-list">
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-img">
+              <picture>
+                <source
+                  srcset="
+                ./image/js/js-1.webp    260w,
+                ./image/js/js-1@2x.webp 520w
+              "
+                  type="image/webp"
+                  media="(min-width:175px)"
+                />
+                <source
+                  srcset="
+                ./image/js/js-1.png   260w,
+                ./image/js/js-1@2x.png 520w
+              "
+                  type="image/png"
+                  media="(min-width:175px)"
+                />
+                
+                <img
+                  
+                  srcset="
+                ./image/js/js-1.png   260w,
+                ./image/js/js-1@2x.png 520w
+              "
+                  src="./image/js/js-1.png"
+                  alt="photo of monitor with program code "
+                />
+              </picture>
+            </div>
+            <h3 class="title item-title">array in javasript - Learn JS #3</h3>
+            <div class="author-wrapper">
+              <div class="author-img">
+                <picture>
+                  <source
+                    srcset="
+                ./image/author/author-1.webp   57w,
+                ./image/author/author-1@2x.webp 114w
+              "
+                    type="image/webp"
+                    media="(min-width:175px)"
+                  />
+                  <source
+                    srcset="
+                ./image/author/author-1.png   57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    type="image/png"
+                    media="(min-width:175px)"
+                  />
+                  
+                  <img
+                    
+                    srcset="
+                ./image/author/author-1.png    57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    src="./image/author/author-1.png"
+                    alt="photo of the author of the article"
+                  />
+                </picture>
+              </div>
+              <div class="author-content">
+                <p class="title author-title">Dasteen</p>
+                <p class="author-date">
+                  <span>Jan 10, 2022</span>
+                  <span>3 min read</span>
+                </p>
+              </div>
+            
+            </div>
+          </a>
+        </li>
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-img">
+              <picture>
+                <source
+                  srcset="./image/js/js-2.webp 260w, ./image/js/js-2@2x.webp 520w"
+                  type="image/webp" media="(min-width:175px)"
+                />
+                <source
+                  srcset="
+                ./image/js/js-2.png   260w,
+                ./image/js/js-2@2x.png 520w
+              "
+                  type="image/png"
+                  media="(min-width:175px)"
+                />
+                
+                <img
+                  
+                  srcset="
+                ./image/js/js-2.png   260w,
+                ./image/js/js-2@2x.png 520w
+              "
+                  src="./image/js/js-2.png"
+                  alt="photo of the book JavaScript for web designers"
+                />
+              </picture>
+            </div>
+            <h3 class="title item-title">Fundamental of javascript</h3>
+            <div class="author-wrapper">
+              <div class="author-img">
+                <picture>
+                  <source
+                    srcset="
+                ./image/author/author-1.webp   57w,
+                ./image/author/author-1@2x.webp 114w
+              "
+                    type="image/webp"
+                    media="(min-width:175px)"
+                  />
+                  <source
+                    srcset="
+                ./image/author/author-1.png   57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    type="image/png"
+                    media="(min-width:175px)"
+                  />
+                  
+                  <img
+                    
+                    srcset="
+                ./image/author/author-1.png    57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    src="./image/author/author-1.png"
+                    alt="photo of the author of the article"
+                  />
+                </picture>
+              </div>
+              <div class="author-content">
+                <p class="title author-title">Dasteen</p>
+                <p class="author-date">
+                  <span>Jan 10, 2022</span>
+                  <span>3 min read</span>
+                </p>
+              </div>
+            
+            </div>
+          </a>
+        </li>
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-img">
+              <picture>
+                <source
+                  srcset="
+                ./image/js/js-3.webp 260w,./image/js/js-3@2x.webp 520w"
+                  type="image/webp"
+                  media="(min-width:175px)"
+                />
+                <source
+                  srcset="
+                ./image/js/js-3.png   260w,
+                ./image/js/js-3@2x.png 520w
+              "
+                  type="image/png"
+                  media="(min-width:175px)"
+                />
+                
+                <img
+                  
+                  srcset="
+                ./image/js/js-3.png   260w,
+                ./image/js/js-3@2x.png 520w
+              "
+                  src="./image/js/js-3.png"
+                  alt="photo of monitor with program code"
+                />
+              </picture>
+            </div>
+            <h3 class="title item-title">7 project with javascript you must try for your portfolio</h3>
+            <div class="author-wrapper">
+              <div class="author-img">
+                <picture>
+                  <source
+                    srcset="
+                ./image/author/author-1.webp   57w,
+                ./image/author/author-1@2x.webp 114w
+              "
+                    type="image/webp"
+                    media="(min-width:175px)"
+                  />
+                  <source
+                    srcset="
+                ./image/author/author-1.png   57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    type="image/png"
+                    media="(min-width:175px)"
+                  />
+                  
+                  <img
+                    
+                    srcset="
+                ./image/author/author-1.png    57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    src="./image/author/author-1.png"
+                    alt="photo of the author of the article"
+                  />
+                </picture>
+              </div>
+              <div class="author-content">
+                <p class="title author-title">Dasteen</p>
+                <p class="author-date">
+                  <span>Jan 10, 2022</span>
+                  <span>3 min read</span>
+                </p>
+              </div>
+            
+            </div>
+          </a>
+        </li>
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-img">
+              <picture>
+                <source
+                  srcset="
+                ./image/js/js-4.webp    260w,
+                ./image/js/js-4@2x.webp 520w
+              "
+                  type="image/webp"
+                  media="(min-width:175px)"
+                />
+                <source
+                  srcset="
+                ./image/js/js-4.png   260w,
+                ./image/js/js-4@2x.png 520w
+              "
+                  type="image/png"
+                  media="(min-width:175px)"
+                />
+                
+                <img
+                  
+                  srcset="
+                ./image/js/js-4.png   260w,
+                ./image/js/js-4@2x.png 520w
+              "
+                  src="./image/js/js-4.png"
+                  alt="photo of calculator"
+                />
+              </picture>
+            </div>
+            <h3 class="title item-title">make simple calculator with javascript</h3>
+            <div class="author-wrapper">
+              <div class="author-img">
+                <picture>
+                  <source
+                    srcset="
+                ./image/author/author-1.webp   57w,
+                ./image/author/author-1@2x.webp 114w
+              "
+                    type="image/webp"
+                    media="(min-width:175px)"
+                  />
+                  <source
+                    srcset="
+                ./image/author/author-1.png   57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    type="image/png"
+                    media="(min-width:175px)"
+                  />
+                  
+                  <img
+                    
+                    srcset="
+                ./image/author/author-1.png    57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    src="./image/author/author-1.png"
+                    alt="photo of the author of the article"
+                  />
+                </picture>
+              </div>
+              <div class="author-content">
+                <p class="title author-title">Dasteen</p>
+                <p class="author-date">
+                  <span>Jan 10, 2022</span>
+                  <span>3 min read</span>
+                </p>
+              </div>
+            
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section gallery react">
+    <div class="container">
+      <div class="title-wrapper">
+        <h2 class="title section-title">React JS</h2>
+        <a class="link title-link" href="#">See All Article
+          <svg class="icon" width="8" height="16">
+            <use xlink:href="image/sprite.svg#arrow-right"></use>
+          </svg>
+        </a>
+      </div>
+      <ul class="grid-list gallery-list">
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-img">
+              <picture>
+                <source
+                  srcset="
+                ./image/react/react-1.webp    260w,
+                ./image/react/react-1@2x.webp 520w
+              "
+                  type="image/webp"
+                  media="(min-width:175px)"
+                />
+                <source
+                  srcset="
+                ./image/react/react-1.png   260w,
+                ./image/react/react-1@2x.png 520w
+              "
+                  type="image/png"
+                  media="(min-width:175px)"
+                />
+                
+                <img
+                  
+                  srcset="
+                ./image/react/react-1.png   260w,
+                ./image/react/react-1@2x.png 520w
+              "
+                  src="./image/react/react-1.png"
+                  alt="photo of monitor with program code "
+                />
+              </picture>
+            </div>
+            <h3 class="title item-title">first month of leaning react jS</h3>
+            <div class="author-wrapper">
+              <div class="author-img">
+                <picture>
+                  <source
+                    srcset="
+                ./image/author/author-1.webp   57w,
+                ./image/author/author-1@2x.webp 114w
+              "
+                    type="image/webp"
+                    media="(min-width:175px)"
+                  />
+                  <source
+                    srcset="
+                ./image/author/author-1.png   57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    type="image/png"
+                    media="(min-width:175px)"
+                  />
+                  
+                  <img
+                    
+                    srcset="
+                ./image/author/author-1.png    57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    src="./image/author/author-1.png"
+                    alt="photo of the author of the article"
+                  />
+                </picture>
+              </div>
+              <div class="author-content">
+                <p class="title author-title">Dasteen</p>
+                <p class="author-date">
+                  <span>Jan 10, 2022</span>
+                  <span>3 min read</span>
+                </p>
+              </div>
+            
+            </div>
+          </a>
+        </li>
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-img">
+              <picture>
+                <source
+                  srcset="./image/react/react-2.webp 260w, ./image/react/react-2@2x.webp 520w"
+                  type="image/webp" media="(min-width:175px)"
+                />
+                <source
+                  srcset="
+                ./image/react/react-2.png   260w,
+                ./image/react/react-2@2x.png 520w
+              "
+                  type="image/png"
+                  media="(min-width:175px)"
+                />
+                
+                <img
+                  
+                  srcset="
+                ./image/react/react-2.png   260w,
+                ./image/react/react-2@2x.png 520w
+              "
+                  src="./image/react/react-2.png"
+                  alt="photo of monitor with program code"
+                />
+              </picture>
+            </div>
+            <h3 class="title item-title">build markdown editor with react JS</h3>
+            <div class="author-wrapper">
+              <div class="author-img">
+                <picture>
+                  <source
+                    srcset="
+                ./image/author/author-1.webp   57w,
+                ./image/author/author-1@2x.webp 114w
+              "
+                    type="image/webp"
+                    media="(min-width:175px)"
+                  />
+                  <source
+                    srcset="
+                ./image/author/author-1.png   57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    type="image/png"
+                    media="(min-width:175px)"
+                  />
+                  
+                  <img
+                    
+                    srcset="
+                ./image/author/author-1.png    57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    src="./image/author/author-1.png"
+                    alt="photo of the author of the article"
+                  />
+                </picture>
+              </div>
+              <div class="author-content">
+                <p class="title author-title">Dasteen</p>
+                <p class="author-date">
+                  <span>Jan 10, 2022</span>
+                  <span>3 min read</span>
+                </p>
+              </div>
+            
+            </div>
+          </a>
+        </li>
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-img">
+              <picture>
+                <source
+                  srcset="
+                ./image/react/react-3.webp 260w,./image/react/react-3@2x.webp 520w"
+                  type="image/webp"
+                  media="(min-width:175px)"
+                />
+                <source
+                  srcset="
+                ./image/react/react-3.png   260w,
+                ./image/react/react-3@2x.png 520w
+              "
+                  type="image/png"
+                  media="(min-width:175px)"
+                />
+                
+                <img
+                  
+                  srcset="
+                ./image/react/react-3.png   260w,
+                ./image/react/react-3@2x.png 520w
+              "
+                  src="./image/react/react-3.png"
+                  alt="program code"
+                />
+              </picture>
+            </div>
+            <h3 class="title item-title">getting started with react JS</h3>
+            <div class="author-wrapper">
+              <div class="author-img">
+                <picture>
+                  <source
+                    srcset="
+                ./image/author/author-1.webp   57w,
+                ./image/author/author-1@2x.webp 114w
+              "
+                    type="image/webp"
+                    media="(min-width:175px)"
+                  />
+                  <source
+                    srcset="
+                ./image/author/author-1.png   57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    type="image/png"
+                    media="(min-width:175px)"
+                  />
+                  
+                  <img
+                    
+                    srcset="
+                ./image/author/author-1.png    57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    src="./image/author/author-1.png"
+                    alt="photo of the author of the article"
+                  />
+                </picture>
+              </div>
+              <div class="author-content">
+                <p class="title author-title">Dasteen</p>
+                <p class="author-date">
+                  <span>Jan 10, 2022</span>
+                  <span>3 min read</span>
+                </p>
+              </div>
+            
+            </div>
+          </a>
+        </li>
+        <li class="item">
+          <a class="item-link" href="#">
+            <div class="item-img">
+              <picture>
+                <source
+                  srcset="
+                ./image/react/react-4.webp    260w,
+                ./image/react/react-4@2x.webp 520w
+              "
+                  type="image/webp"
+                  media="(min-width:175px)"
+                />
+                <source
+                  srcset="
+                ./image/react/react-4.png   260w,
+                ./image/react/react-4@2x.png 520w
+              "
+                  type="image/png"
+                  media="(min-width:175px)"
+                />
+                
+                <img
+                  
+                  srcset="
+                ./image/react/react-4.png   260w,
+                ./image/react/react-4@2x.png 520w
+              "
+                  src="./image/react/react-4.png"
+                  alt="photo of tic-tac-toe game"
+                />
+              </picture>
+            </div>
+            <h3 class="title item-title">Make tic tac toe games with react JS</h3>
+            <div class="author-wrapper">
+              <div class="author-img">
+                <picture>
+                  <source
+                    srcset="
+                ./image/author/author-1.webp   57w,
+                ./image/author/author-1@2x.webp 114w
+              "
+                    type="image/webp"
+                    media="(min-width:175px)"
+                  />
+                  <source
+                    srcset="
+                ./image/author/author-1.png   57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    type="image/png"
+                    media="(min-width:175px)"
+                  />
+                  
+                  <img
+                    
+                    srcset="
+                ./image/author/author-1.png    57w,
+                ./image/author/author-1@2x.png 114w
+              "
+                    src="./image/author/author-1.png"
+                    alt="photo of the author of the article"
+                  />
+                </picture>
+              </div>
+              <div class="author-content">
+                <p class="title author-title">Dasteen</p>
+                <p class="author-date">
+                  <span>Jan 10, 2022</span>
+                  <span>3 min read</span>
+                </p>
+              </div>
+            
+            </div>
+          </a>
+        </li>
+      </ul>
+    
+    </div>
+  </section>
+
+
 </main>
 
 </body>
