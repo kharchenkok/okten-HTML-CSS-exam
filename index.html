@@ -2,19 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Dasteen Front end dev blog">
   <title>Dasteen Blog </title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dasteen Blog">
+  <meta property="og:description" content="On this blog I share tips and tricks, frameworks, projects, tutorials, etc">
+  <meta property="og:image" content="https://kharchenkok.github.io/okten-HTML-CSS-exam/image/opg/blog.jpg">
+  <meta property="og:url" content="https://kharchenkok.github.io/okten-HTML-CSS-exam/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dasteen Blog">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dasteen Blog">
+  <meta name="twitter:description" content="On this blog I share tips and tricks, frameworks, projects, tutorials, etc">
+  <meta name="twitter:image" content="https://kharchenkok.github.io/okten-HTML-CSS-exam/image/opg/blog.jpg">
+  <meta name="twitter:site" content="@DasteenBlog">
+  <!-- ------------------------------ -->
   <link rel="apple-touch-icon" sizes="180x180"
     href="./favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32"
     href="./favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16"
     href="./favicon_io/favicon-16x16.png">
+  <!-- ------------------------------ -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+  <link href="mobile.css" rel="stylesheet">
   <link href="tablet.css" rel="stylesheet">
   <link href="desktop.css" rel="stylesheet">
 
@@ -25,21 +41,20 @@
   <div class="container">
     <a class="logo" href="#">
       Dasteen<span>.Blog</span>
-    
     </a>
     <nav class="nav">
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="link nav-link" href="#">Home</a>
+          <a class="link nav-link" href="#" aria-label="Link to the Home page">Home</a>
         </li>
         <li class="nav-item">
-          <a class="link nav-link" href="#">Category</a>
+          <a class="link nav-link" href="#" aria-label="Link to the Category page">Category</a>
         </li>
         <li class="nav-item">
-          <a class="link nav-link" href="#">About Me</a>
+          <a class="link nav-link" href="#" aria-label="Link to the About page">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="link nav-link" href="#">
+          <a class="link nav-link" href="#" aria-label="Search Link">
             <svg class="icon" width="17" height="18">
               <use xlink:href="image/sprite.svg#search"></use>
             </svg>
@@ -50,8 +65,10 @@
     
     </nav>
     <button class="btn">
-      <img src="image/coffee.svg" alt="" width="24" height="24">
-      buy Me a Coffee
+      <svg class="icon" width="24" height="24">
+        <use xlink:href="image/sprite.svg#coffee-1"></use>
+      </svg>
+      <span>buy Me a Coffee</span>
     </button>
   </div>
 
@@ -67,7 +84,7 @@
           <label>
             <input type="email" name="email" placeholder="Enter your email here....">
           </label>
-          <button class="btn" type="submit">Subscribe</button>
+          <button class="btn" type="submit"><span>Subscribe</span></button>
         </form>
       
       </div>
@@ -98,6 +115,8 @@
               "
             src="./image/hero/hero.png"
             alt="Hero image"
+            width="435"
+            height="365"
           />
         </picture>
       
@@ -105,11 +124,12 @@
     </div>
   
   </section>
-  <section class="section-grey category">
+  <section class="section category">
     <div class="container">
+      
       <div class="title-wrapper">
         <h2 class="title section-title">Browse the category</h2>
-        <a class="link title-link" href="#">see all category
+        <a class="link title-link" href="#" aria-label="Link to the Category page">see all category
           <svg class="icon" width="8" height="16">
             <use xlink:href="image/sprite.svg#arrow-right"></use>
           </svg>
@@ -118,7 +138,7 @@
       
       <ul class="grid-list category-list">
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the CSS Category page">
             <div class="item-icon">
               <img src="image/category/css.svg" alt="css icon" width="33" height="37">
             </div>
@@ -126,7 +146,7 @@
           </a>
         </li>
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the JavaScript Category page">
             <div class="item-icon">
               <img src="image/category/js.svg" alt="js icon" width="60" height="60">
             </div>
@@ -134,7 +154,7 @@
           </a>
         </li>
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the Tailwind Category page">
             <div class="item-icon">
               <img src="image/category/tailwind.svg" alt="tailwind icon" width="40" height="24">
             </div>
@@ -142,7 +162,7 @@
           </a>
         </li>
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the Vue JS Category page">
             <div class="item-icon">
               <img src="image/category/vue.svg" alt="Vue JS icon" width="36" height="31">
             </div>
@@ -150,7 +170,7 @@
           </a>
         </li>
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the React JS Category page">
             <div class="item-icon">
               <img src="image/category/react.svg" alt="React JS icon" width="40" height="36">
             </div>
@@ -165,7 +185,7 @@
     <div class="container">
       <div class="title-wrapper">
         <h2 class="title section-title">Featured Article</h2>
-        <a class="link title-link" href="#">See All Article
+        <a class="link title-link" href="#" aria-label="Link to the Article page">See All Article
           <svg class="icon" width="8" height="16">
             <use xlink:href="image/sprite.svg#arrow-right"></use>
           </svg>
@@ -174,7 +194,7 @@
       
       <ul class="grid-list gallery-list">
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the Fundamental of javascript Article page">
             <div class="item-img">
               <picture>
                 <source
@@ -202,6 +222,8 @@
               "
                   src="./image/featured/featured-1.png"
                   alt="photo of the book JavaScript for web designers"
+                  width="260"
+                  height="198"
                 />
               </picture>
             </div>
@@ -234,6 +256,8 @@
               "
                     src="./image/author/author-1.png"
                     alt="photo of the author of the article"
+                    width="57"
+                    height="57"
                   />
                 </picture>
               </div>
@@ -249,7 +273,7 @@
           </a>
         </li>
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the Grid CSS make your life easier Article page">
             <div class="item-img">
               <picture>
                 <source
@@ -277,6 +301,8 @@
               "
                   src="./image/featured/featured-2.png"
                   alt="photo of monitor with program code"
+                  width="260"
+                  height="198"
                 />
               </picture>
             </div>
@@ -309,6 +335,8 @@
               "
                     src="./image/author/author-1.png"
                     alt="photo of the author of the article"
+                    width="57"
+                    height="57"
                   />
                 </picture>
               </div>
@@ -324,7 +352,7 @@
           </a>
         </li>
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the Animated toggle with CSS Article page">
             <div class="item-img">
               <picture>
                 <source
@@ -352,6 +380,8 @@
               "
                   src="./image/featured/featured-3.png"
                   alt="photo of toggle button"
+                  width="260"
+                  height="198"
                 />
               </picture>
             </div>
@@ -384,6 +414,8 @@
               "
                     src="./image/author/author-1.png"
                     alt="photo of the author of the article"
+                    width="57"
+                    height="57"
                   />
                 </picture>
               </div>
@@ -399,7 +431,7 @@
           </a>
         </li>
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the Make tic tac toe games with react JS Article page">
             <div class="item-img">
               <picture>
                 <source
@@ -427,6 +459,8 @@
               "
                   src="./image/featured/featured-4.png"
                   alt="photo of tic-tac-toe game"
+                  width="260"
+                  height="198"
                 />
               </picture>
             </div>
@@ -459,6 +493,8 @@
               "
                     src="./image/author/author-1.png"
                     alt="photo of the author of the article"
+                    width="57"
+                    height="57"
                   />
                 </picture>
               </div>
@@ -473,8 +509,6 @@
             </div>
           </a>
         </li>
-      
-      
       </ul>
     
     </div>
@@ -483,7 +517,7 @@
     <div class="container">
       <div class="title-wrapper">
         <h2 class="title section-title">CSS</h2>
-        <a class="link title-link" href="#">See All Article
+        <a class="link title-link" href="#" aria-label="Link to the Article page">See All Article
           <svg class="icon" width="8" height="16">
             <use xlink:href="image/sprite.svg#arrow-right"></use>
           </svg>
@@ -492,7 +526,7 @@
       
       <ul class="grid-list gallery-list">
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the Flexbox CSS Article page">
             <div class="item-img">
               <picture>
                 <source
@@ -520,6 +554,8 @@
               "
                   src="./image/css/css-1.png"
                   alt="photo of notes"
+                  width="260"
+                  height="198"
                 />
               </picture>
             </div>
@@ -552,6 +588,8 @@
               "
                     src="./image/author/author-1.png"
                     alt="photo of the author of the article"
+                    width="57"
+                    height="57"
                   />
                 </picture>
               </div>
@@ -567,7 +605,7 @@
           </a>
         </li>
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the Grid CSS Article page">
             <div class="item-img">
               <picture>
                 <source
@@ -595,6 +633,8 @@
               "
                   src="./image/css/css-2.png"
                   alt="photo of monitor with program code"
+                  width="260"
+                  height="198"
                 />
               </picture>
             </div>
@@ -627,6 +667,8 @@
               "
                     src="./image/author/author-1.png"
                     alt="photo of the author of the article"
+                    width="57"
+                    height="57"
                   />
                 </picture>
               </div>
@@ -642,7 +684,7 @@
           </a>
         </li>
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the 3 easy way to make div center Article page">
             <div class="item-img">
               <picture>
                 <source
@@ -670,6 +712,8 @@
               "
                   src="./image/css/css-3.png"
                   alt="photo of monitor with program code"
+                  width="260"
+                  height="198"
                 />
               </picture>
             </div>
@@ -702,6 +746,8 @@
               "
                     src="./image/author/author-1.png"
                     alt="photo of the author of the article"
+                    width="57"
+                    height="57"
                   />
                 </picture>
               </div>
@@ -717,7 +763,7 @@
           </a>
         </li>
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the Animated toggle with CSS Article page">
             <div class="item-img">
               <picture>
                 <source
@@ -745,6 +791,8 @@
               "
                   src="./image/css/css-4.png"
                   alt="photo of toggle button"
+                  width="260"
+                  height="198"
                 />
               </picture>
             </div>
@@ -777,6 +825,8 @@
               "
                     src="./image/author/author-1.png"
                     alt="photo of the author of the article"
+                    width="57"
+                    height="57"
                   />
                 </picture>
               </div>
@@ -799,7 +849,7 @@
     <div class="container">
       <div class="title-wrapper">
         <h2 class="title section-title">javascript</h2>
-        <a class="link title-link" href="#">See All Article
+        <a class="link title-link" href="#" aria-label="Link to the Article page">See All Article
           <svg class="icon" width="8" height="16">
             <use xlink:href="image/sprite.svg#arrow-right"></use>
           </svg>
@@ -807,7 +857,7 @@
       </div>
       <ul class="grid-list gallery-list">
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the Array in JavaSript Article page">
             <div class="item-img">
               <picture>
                 <source
@@ -835,6 +885,8 @@
               "
                   src="./image/js/js-1.png"
                   alt="photo of monitor with program code "
+                  width="260"
+                  height="198"
                 />
               </picture>
             </div>
@@ -867,6 +919,8 @@
               "
                     src="./image/author/author-1.png"
                     alt="photo of the author of the article"
+                    width="57"
+                    height="57"
                   />
                 </picture>
               </div>
@@ -882,7 +936,7 @@
           </a>
         </li>
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the Fundamental of javascript Article page">
             <div class="item-img">
               <picture>
                 <source
@@ -906,6 +960,8 @@
               "
                   src="./image/js/js-2.png"
                   alt="photo of the book JavaScript for web designers"
+                  width="260"
+                  height="198"
                 />
               </picture>
             </div>
@@ -938,6 +994,8 @@
               "
                     src="./image/author/author-1.png"
                     alt="photo of the author of the article"
+                    width="57"
+                    height="57"
                   />
                 </picture>
               </div>
@@ -953,7 +1011,7 @@
           </a>
         </li>
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the 7 project with javascript Article page">
             <div class="item-img">
               <picture>
                 <source
@@ -979,6 +1037,8 @@
               "
                   src="./image/js/js-3.png"
                   alt="photo of monitor with program code"
+                  width="260"
+                  height="198"
                 />
               </picture>
             </div>
@@ -1011,6 +1071,8 @@
               "
                     src="./image/author/author-1.png"
                     alt="photo of the author of the article"
+                    width="57"
+                    height="57"
                   />
                 </picture>
               </div>
@@ -1026,7 +1088,7 @@
           </a>
         </li>
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the Make simple calculator with javascript Article page">
             <div class="item-img">
               <picture>
                 <source
@@ -1054,6 +1116,8 @@
               "
                   src="./image/js/js-4.png"
                   alt="photo of calculator"
+                  width="260"
+                  height="198"
                 />
               </picture>
             </div>
@@ -1086,6 +1150,8 @@
               "
                     src="./image/author/author-1.png"
                     alt="photo of the author of the article"
+                    width="57"
+                    height="57"
                   />
                 </picture>
               </div>
@@ -1107,7 +1173,7 @@
     <div class="container">
       <div class="title-wrapper">
         <h2 class="title section-title">React JS</h2>
-        <a class="link title-link" href="#">See All Article
+        <a class="link title-link" href="#" aria-label="Link to the Article page">See All Article
           <svg class="icon" width="8" height="16">
             <use xlink:href="image/sprite.svg#arrow-right"></use>
           </svg>
@@ -1115,7 +1181,7 @@
       </div>
       <ul class="grid-list gallery-list">
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the First month of leaning React jS Article page">
             <div class="item-img">
               <picture>
                 <source
@@ -1143,6 +1209,8 @@
               "
                   src="./image/react/react-1.png"
                   alt="photo of monitor with program code "
+                  width="260"
+                  height="198"
                 />
               </picture>
             </div>
@@ -1175,6 +1243,8 @@
               "
                     src="./image/author/author-1.png"
                     alt="photo of the author of the article"
+                    width="57"
+                    height="57"
                   />
                 </picture>
               </div>
@@ -1190,7 +1260,7 @@
           </a>
         </li>
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the Build markdown editor with React JS Article page">
             <div class="item-img">
               <picture>
                 <source
@@ -1214,6 +1284,8 @@
               "
                   src="./image/react/react-2.png"
                   alt="photo of monitor with program code"
+                  width="260"
+                  height="198"
                 />
               </picture>
             </div>
@@ -1246,6 +1318,8 @@
               "
                     src="./image/author/author-1.png"
                     alt="photo of the author of the article"
+                    width="57"
+                    height="57"
                   />
                 </picture>
               </div>
@@ -1261,7 +1335,7 @@
           </a>
         </li>
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the Getting started with React JS Article page">
             <div class="item-img">
               <picture>
                 <source
@@ -1287,6 +1361,8 @@
               "
                   src="./image/react/react-3.png"
                   alt="program code"
+                  width="260"
+                  height="198"
                 />
               </picture>
             </div>
@@ -1319,6 +1395,8 @@
               "
                     src="./image/author/author-1.png"
                     alt="photo of the author of the article"
+                    width="57"
+                    height="57"
                   />
                 </picture>
               </div>
@@ -1334,7 +1412,7 @@
           </a>
         </li>
         <li class="item">
-          <a class="item-link" href="#">
+          <a class="item-link" href="#" aria-label="Link to the Make tic tac toe games with React JS Article page">
             <div class="item-img">
               <picture>
                 <source
@@ -1362,6 +1440,8 @@
               "
                   src="./image/react/react-4.png"
                   alt="photo of tic-tac-toe game"
+                  width="260"
+                  height="198"
                 />
               </picture>
             </div>
@@ -1394,6 +1474,8 @@
               "
                     src="./image/author/author-1.png"
                     alt="photo of the author of the article"
+                    width="57"
+                    height="57"
                   />
                 </picture>
               </div>
@@ -1409,12 +1491,136 @@
           </a>
         </li>
       </ul>
-    
+      <a class="btn" href="#" aria-label="Link to the all Articles page"><span>More Article</span></a>
+    </div>
+  </section>
+  <section class="section subscribe">
+    <div class="container">
+      <div class="title-wrapper">
+        <h2 class="title section-title">Subscribe For the lastest updates</h2>
+        <p>Subscribe to newsletter and never miss the new post every week.</p>
+      </div>
+      <form class="form">
+        <label>
+          <input type="email" name="email" placeholder="Enter your email here....">
+        </label>
+        <button class="btn" type="submit"><span>Subscribe</span></button>
+      </form>
     </div>
   </section>
 
 
 </main>
-
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-contacts">
+        <a class="logo" href="#">
+          Dasteen<span>.Blog</span>
+        </a>
+        <p>Digitaldastin by Dastin Darmawan</p>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link" href="https://medium.com/" aria-label="Link to the Medium site" target="_blank" rel="noopener noreferrer nofollow">
+              <svg class="icon" width="24" height="24">
+                <use xlink:href="image/sprite.svg#medium"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://x.com/?mx=2" aria-label="Link to the Twitter site" target="_blank" rel="noopener noreferrer nofollow">
+              <svg class="icon" width="24" height="24">
+                <use xlink:href="image/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://www.instagram.com/" aria-label="Link to the Instagram site" target="_blank" rel="noopener noreferrer nofollow">
+              <svg class="icon" width="24" height="24">
+                <use xlink:href="image/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://www.linkedin.com/" aria-label="Link to the Linkedin site" target="_blank" rel="noopener noreferrer nofollow">
+              <svg class="icon" width="24" height="24">
+                <use xlink:href="image/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="grid-list footer-list">
+        <li class="footer-item">
+          <h3 class="title footer-item-title">Category</h3>
+          <ul class="footer-item-list">
+            <li>
+              <a class="link" href="#" aria-label="Link to the CSS Category page">CSS</a>
+            </li>
+            <li>
+              <a class="link" href="#" aria-label="Link to the Javascript Category page">Javascript</a>
+            </li>
+            <li>
+              <a class="link" href="#" aria-label="Link to the Tailwind Category page">Tailwind</a>
+            </li>
+            <li>
+              <a class="link" href="#" aria-label="Link to the React JS Category page">React JS</a>
+            </li>
+            <li>
+              <a class="link" href="#" aria-label="Link to the all Categories page">More Category</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer-item">
+          <h3 class="title footer-item-title">About Me</h3>
+          <ul class="footer-item-list">
+            <li>
+              <a class="link" href="#" aria-label="Link to the About page">About Me</a>
+            </li>
+            <li>
+              <a class="link" href="#" aria-label="Link to the Projects page">Projects</a>
+            </li>
+            <li>
+              <a class="link" href="#" aria-label="Link to the Achievement page">Achievement</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer-item">
+          <h3 class="title footer-item-title">Get in touch</h3>
+          <ul class="footer-item-list">
+            <li>
+              <a class="link" href="tel:+628XXXXXXXX" aria-label="Phone Link">+62-8XXX-XXX-XX</a>
+            </li>
+            <li>
+              <a class="link" href="mailto:demo@gmail.com" aria-label="Email Link">demo@gmail.com</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer-item">
+          <h3 class="title footer-item-title">Follow Us</h3>
+          <ul class="footer-item-list">
+            <li>
+              <a class="link" href="https://medium.com/" aria-label="Link to the Medium" target="_blank" rel="noopener noreferrer nofollow">Medium</a>
+            </li>
+            <li>
+              <a class="link" href="https://www.instagram.com/" aria-label="Link to the Instagram" target="_blank" rel="noopener noreferrer nofollow">Instagram</a>
+            </li>
+            <li>
+              <a class="link" href="https://x.com/?mx=2" aria-label="Link to the Twitter" target="_blank" rel="noopener noreferrer nofollow">Twitter</a>
+            </li>
+            <li>
+              <a class="link" href="https://www.facebook.com/" aria-label="Link to the Facebook" target="_blank" rel="noopener noreferrer nofollow">Facebook</a>
+            </li>
+          
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2025 Digitaldastin</p>
+    </div>
+  
+  </div>
+</footer>
 </body>
 </html>
