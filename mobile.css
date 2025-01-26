@@ -354,7 +354,7 @@ body {
 /*===============category=====================*/
 
 .category {
-    --section-bg: var(--grey-bg);
+    --section-bg: var(--light-grey-bg);
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -664,7 +664,7 @@ body {
     }
 
     .hero-img {
-        height: 32vh;
+        max-height: 32vh;
     }
 
     .hero-img img {
