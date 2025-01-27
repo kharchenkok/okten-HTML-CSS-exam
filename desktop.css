@@ -43,6 +43,7 @@
 
     .hero .container {
         gap: 115px;
+        justify-content: space-between;
     }
 
     .hero-content {
