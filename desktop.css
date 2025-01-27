@@ -42,8 +42,11 @@
     }
 
     .hero .container {
-
         gap: 115px;
+    }
+
+    .hero-content {
+        max-width: 665px;
     }
 
 
